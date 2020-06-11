@@ -23,7 +23,7 @@ let db = {
   comments: [
     {
       userHandle: "user",
-      screamId: "kdjsfgdksuufhgkdsufky",
+      screamId: "42142412312",
       body: "nice one mate!",
       createdAt: "2019-03-15T10:59:52.798Z",
     },
@@ -33,7 +33,7 @@ let db = {
       recipient: "user",
       sender: "john",
       read: "true | false",
-      screamId: "kdjsfgdksuufhgkdsufky",
+      screamId: "23423552",
       type: "like | comment",
       createdAt: "2019-03-15T10:59:52.798Z",
     },
