@@ -80,7 +80,7 @@ exports.deleteNotificationOnUnlike = functions
 exports.createNotificationOnComment = functions
   .region("us-central1")
   .firestore.document("comments/{id}")
-  .onCreate((snapshop) => {
+  .onCreate((snapshot) => {
     return db
       .doc(`/screams/${snapshot.data().screamId}`)
       .get()
@@ -128,7 +128,7 @@ exports.onUserImageChange = functions
 exports.onScreamDelete = functions
   .region("us-central1")
   .firestore.document("/screams/{screamId}")
-  .onDelete((snapshop, context) => {
+  .onDelete((snapshot, context) => {
     const screamId = context.params.screamId;
     const batch = db.batch();
     return db
